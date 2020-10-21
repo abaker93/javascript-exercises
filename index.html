@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Exercises </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Source+Sans+Pro&family=Staatliches&display=swap" rel="stylesheet"> 
+    <link href="reset.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Javascript Exercises</h1>
+    
+    <!-- Caesar Cipher Solutions -->
+    <h2>Caesar Cipher</h2>
+    <p>Implement the legendary caesar cipher</p>
+    <p>In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.</p>
+    <ul>
+        <li>write a function that takes a string to be encoded and a shift factor and then returns the encoded string</li>
+        <li>the cipher should retain capitalization</li>
+        <li>should <em>not</em> shift punctuation</li>
+        <li>the shift should wrap around the alphabet</li>
+        <li>negative numbers should work as well</li>
+    </ul>
+    
+    <div class="solutions">
+
+        <div>
+            <h3>Problem 1:</h3>
+            <p>works with single letters</p>
+            <code>caesar('A', 1)</code>
+            <h4>Solution:</h4>
+            <code id="caesar1"></code>
+        </div>
+
+        <div>
+            <h3>Problem 2:</h3>
+            <p>works with words</p>
+            <code>caesar('Aaa', 1)</code>
+            <h4>Solution:</h4>
+            <code id="caesar2"></code>
+        </div>        
+        
+        <div>
+            <h3>Problem 3:</h3>
+            <p>works with phrases</p>
+            <code>caesar('Hello, World!', 5)</code>
+            <h4>Solution:</h4>
+            <code id="caesar3"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 4:</h3>
+            <p>works with negative shift</p>
+            <code>caesar('Mjqqt, Btwqi!', -5)</code>
+            <h4>Solution:</h4>
+            <code id="caesar4"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 5:</h3>
+            <p>wraps</p>
+            <code>caesar('Z', 1)</code>
+            <h4>Solution:</h4>
+            <code id="caesar5"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 6:</h3>
+            <p>works with large shift factors</p>
+            <code>caesar('Hello, World!', 75)</code>
+            <h4>Solution:</h4>
+            <code id="caesar6"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 7:</h3>
+            <p>works with large negative shift factors</p>
+            <code>caesar('Hello, World!', -29)</code>
+            <h4>Solution:</h4>
+            <code id="caesar7"></code>
+        </div>
+        
+    </div>
+    
+    <!-- Calculator Solutions -->
+    <h2>Calculator</h2>
+    <p>The goal for this exercise is to create a calculator that does the following: add, subtract, get the sum, multiply, get the power, and find the factorial</p>
+
+    <div class="solutions">
+
+        <div>
+            <h3>Problem 1</h3>
+            <p>adds 0 and 0</p>
+            <code>add(0,0)</code>
+            <h4>Solution:</h4>
+            <code id="calc1"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 2</h3>
+            <p>adds 2 and 2</p>
+            <code>add(2,2)</code>
+            <h4>Solution:</h4>
+            <code id="calc2"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 3</h3>
+            <p>adds positive numbers</p>
+            <code>add(2,6)</code>
+            <h4>Solution:</h4>
+            <code id="calc3"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 4</h3>
+            <p>subtracts numbers</p>
+            <code>subtract(10,4)</code>
+            <h4>Solution:</h4>
+            <code id="calc4"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 5</h3>
+            <p>computes the sum of an empty array</p>
+            <code>sum([])</code>
+            <h4>Solution:</h4>
+            <code id="calc5"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 6</h3>
+            <p>computes the sum of an array of one number</p>
+            <code>sum([7])</code>
+            <h4>Solution:</h4>
+            <code id="calc6"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 7</h3>
+            <p>computes the sum of an array of two numbers</p>
+            <code>sum([7,11])</code>
+            <h4>Solution:</h4>
+            <code id="calc7"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 8</h3>
+            <p>computes the sum of an array of many numbers</p>
+            <code>sum([1,3,5,7,9])</code>
+            <h4>Solution:</h4>
+            <code id="calc8"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 9</h3>
+            <p>multiplies two numbers</p>
+            <code>sum([2,4])</code>
+            <h4>Solution:</h4>
+            <code id="calc9"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 10</h3>
+            <p>multiplies several numbers</p>
+            <code>multiply([2,4,6,8,10,12,14])</code>
+            <h4>Solution:</h4>
+            <code id="calc10"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 11</h3>
+            <p>raises one number to the power of another number</p>
+            <code>power(4,3)</code>
+            <h4>Solution:</h4>
+            <code id="calc11"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 12</h3>
+            <p>computes the factorial of 0</p>
+            <code>factorial(0)</code>
+            <h4>Solution:</h4>
+            <code id="calc12"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 13</h3>
+            <p>computes the factorial of 1</p>
+            <code>factorial(1)</code>
+            <h4>Solution:</h4>
+            <code id="calc13"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 14</h3>
+            <p>computes the factorial of 2</p>
+            <code>factorial(2)</code>
+            <h4>Solution:</h4>
+            <code id="calc14"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 15</h3>
+            <p>computes the factorial of 5</p>
+            <code>factorial(5)</code>
+            <h4>Solution:</h4>
+            <code id="calc15"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 16</h3>
+            <p>computes the factorial of 10</p>
+            <code>factorial(10)</code>
+            <h4>Solution:</h4>
+            <code id="calc16"></code>
+        </div>
+        
+    </div>
+
+    <!--Fibonacci Solutions-->
+    <h2>Fibonacci Sequence</h2>
+    <p>Create a function that returns a specific member of the fibonacci sequence:</p>
+    <p>a series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers. The simplest is the series 1, 1, 2, 3, 5, 8, etc.</p>
+
+    <div class="solutions">
+
+        <div>
+            <h3>Problem 1</h3>
+            <p>works</p>
+            <code>fibonacci(4)</code>
+            <h4>Solution:</h4>
+            <code id="fib1"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 2</h3>
+            <p>works</p>
+            <code>fibonacci(6)</code>
+            <h4>Solution:</h4>
+            <code id="fib2"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 3</h3>
+            <p>works</p>
+            <code>fibonacci(10)</code>
+            <h4>Solution:</h4>
+            <code id="fib3"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 4</h3>
+            <p>works</p>
+            <code>fibonacci(15)</code>
+            <h4>Solution:</h4>
+            <code id="fib4"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 5</h3>
+            <p>works</p>
+            <code>fibonacci(25)</code>
+            <h4>Solution:</h4>
+            <code id="fib5"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 6</h3>
+            <p>doesn't accept negatives</p>
+            <code>fibonacci(-25)</code>
+            <h4>Solution:</h4>
+            <code id="fib6"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 7</h3>
+            <p>DOES accept strings</p>
+            <code>fibonacci('1')</code>
+            <h4>Solution:</h4>
+            <code id="fib7"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 8</h3>
+            <p>DOES accept strings</p>
+            <code>fibonacci('2')</code>
+            <h4>Solution:</h4>
+            <code id="fib8"></code>
+        </div>
+        
+        <div>
+            <h3>Problem 9</h3>
+            <p>DOES accept strings</p>
+            <code>fibonacci('8')</code>
+            <h4>Solution:</h4>
+            <code id="fib9"></code>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
